@@ -1,0 +1,88 @@
+alpha: 30.0
+batch_size: 256
+categorical_channel: 10
+cont_gamma: 30.0
+debed_sz_1: 128
+debed_sz_2: 128
+disc_gamma: 30.0
+early_stop_patience: 2500
+hidden:
+- 32
+- 64
+- 128
+- 256
+- 512
+hidden_d:
+- 512
+- 256
+- 128
+- 64
+- 32
+k_sizes:
+- 1
+- 1
+- 3
+- 3
+- 3
+k_sizes_d:
+- 3
+- 3
+- 3
+- 1
+- 1
+kld_full_value: 0.5
+kld_wt_one_at_epoch: 2000
+kld_wt_zero_for_epochs: 1000
+kld_zero_value: 1.0e-15
+latent_1: 256
+latent_2: 128
+latent_size: 256
+layer_symbol: LAY
+lr_ini: 0.0001
+lr_min: 1.0e-06
+lr_reduce_factor: 0.2
+lr_reduce_patience: 1500
+max_depth: 10
+max_len: 56
+max_steps: 10
+n_chars: 29
+num_workers: 4
+outpadding:
+- 0
+- 0
+- 0
+- 1
+- 1
+outpadding_d:
+- 1
+- 1
+- 0
+- 0
+- 0
+padding:
+- 1
+- 1
+- 1
+- 1
+- 1
+padding_d:
+- 1
+- 1
+- 1
+- 1
+- 1
+strides:
+- 1
+- 2
+- 2
+- 2
+- 2
+strides_d:
+- 2
+- 2
+- 2
+- 2
+- 1
+temperature: -0.1
+weighted_sampling: true
+weights_path: null
